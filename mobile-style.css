@@ -12,6 +12,7 @@ body {
   background: #f7f7f9;
   height: auto;
 }
+
 .hero {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -19,8 +20,6 @@ body {
   border-bottom-left-radius: 100px;
   padding-bottom: 30px;
 }
-
-
 
 .header-title {
   font-weight: 700;
