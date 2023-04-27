@@ -9,7 +9,7 @@
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
-git 
+
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
@@ -87,7 +87,8 @@ It is a show of my understanding of Gitflow, use of Linters, HTML5 semantics, CS
 
 ### Prerequisites
 
-- You only need a browser to run the html file in.
+- A code editor of your choice (like vs code or atom and so on)
+-version control system (git is preferred)
 
 ### Setup
 
@@ -98,11 +99,12 @@ It is a show of my understanding of Gitflow, use of Linters, HTML5 semantics, CS
 Install this project with:
 
 - Open your command prompt or terminal and run.
-- git clone
+-  git clone https://github.com/MariamOsman11/-Portfolio-.git
+cd -Portfolio-
 
 ### Usage
 
-- I can help in building a product , feature or website Look through some of my work and experience! don’t hestiate to contact me.
+- this is my portflio and will use to insert my upcoming projects.
 
 ### Run tests
 
@@ -168,7 +170,7 @@ Give a ⭐️ if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Major thanks to [Chandan Gupta](https://github.com/Chandan-devs-tech)
+major thanks to microverse and it's code reviewers.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,6 +178,6 @@ Major thanks to [Chandan Gupta](https://github.com/Chandan-devs-tech)
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT]() licensed.
+This project is [MIT](./mit.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
