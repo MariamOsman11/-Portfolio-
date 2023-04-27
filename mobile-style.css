@@ -236,7 +236,7 @@ header {
   letter-spacing: 0.03em;
   color: #396df2;
   background: #fff;
-  border: 1px solid #396df2;
+  border: 1px solid #6070ff;
   border-radius: 10px;
   padding: 12px;
   margin-bottom: 26px;
@@ -244,7 +244,7 @@ header {
 
 .card-btn:hover {
   color: #fff;
-  background-color: #396df2;
+  background-color: #6070ff;
   transition: 1s ease-in-out;
 }
 
@@ -272,7 +272,6 @@ header {
 
 .about-title {
   font-family: "Poppins", sans-serif;
-  width: 40%;
   padding-bottom: 14px;
   font-style: normal;
   font-weight: 700;
@@ -318,7 +317,7 @@ header {
 
 .about-btn {
   cursor: pointer;
-  border: 1px solid #396df2;
+  border: 1px solid #6070ff;
   height: 7vh;
   border-radius: 10px;
   width: max-content;
@@ -589,6 +588,10 @@ hr.new1 {
   transition: 1s ease-in-out;
 }
 
+.form-btn:active {
+  background-color: white;
+}
+
 .btn-center {
   display: flex;
   justify-content: center;
@@ -650,8 +653,4 @@ a {
 
 #heading-list {
   filter: blur(8);
-}
-
-.arrow-down {
-  width: 15px;
 }
