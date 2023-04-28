@@ -11,10 +11,10 @@
 body {
   background: #f7f7f9;
   height: auto;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   background: #fff;
   border-bottom-left-radius: 100px;
@@ -143,7 +143,6 @@ header {
 }
 
 .card-title {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -163,7 +162,6 @@ header {
 
 .bold-info {
   list-style-type: none;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -184,7 +182,6 @@ header {
 }
 
 .info {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -196,7 +193,6 @@ header {
 }
 
 .card-para {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -214,7 +210,6 @@ header {
 }
 
 .lang1 {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -228,7 +223,6 @@ header {
 
 .card-btn {
   margin: 12px 15px;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -271,7 +265,6 @@ header {
 }
 
 .about-title {
-  font-family: "Poppins", sans-serif;
   padding-bottom: 14px;
   font-style: normal;
   font-weight: 700;
@@ -284,7 +277,6 @@ header {
 
 .about-para {
   padding-bottom: 14px;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -293,7 +285,6 @@ header {
 }
 
 .about-contact {
-  font-family: "Poppins", sans-serif;
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -323,7 +314,6 @@ header {
   width: max-content;
   padding: 8px;
   background: #fff;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -339,7 +329,7 @@ header {
 
 .about-btn:hover {
   color: #fff;
-  background-color: #396df2;
+  background-color: #6070FF;
   transition: 1s ease-in-out;
 }
 
@@ -367,7 +357,6 @@ header {
 
 .lang-title h3 {
   padding-bottom: 16px;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -405,7 +394,6 @@ header {
 }
 
 .langs-text {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -421,10 +409,10 @@ header {
   padding-top: 0.7rem;
   width: 100%;
   height: 13vh;
+ list-style-type: none; 
 }
 
 .frame-title {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.3rem;
@@ -448,15 +436,15 @@ header {
   width: 100%;
   height: 11vh;
   padding-top: 0.7rem;
+  list-style-type: none;
 }
 
 .skill-title {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.3rem;
   line-height: 24px;
-  color: #000;
+  color: #000; 
 }
 
 .skill img {
@@ -493,7 +481,6 @@ hr.new1 {
 }
 
 .footer-title {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -506,7 +493,6 @@ hr.new1 {
 
 .footer-para {
   width: 95%;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -532,7 +518,6 @@ hr.new1 {
   border-radius: 8px;
   border: none;
   padding: 1rem;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -552,7 +537,6 @@ hr.new1 {
   border: none;
   width: 100%;
   padding: 1rem;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -572,7 +556,6 @@ hr.new1 {
   cursor: pointer;
   background: #fff;
   border-radius: 8px;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -616,7 +599,6 @@ hr.new1 {
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
-  font-family: "Poppins", sans-serif;
   color: white;
   backdrop-filter: blur(7px);
 }
@@ -636,7 +618,6 @@ a {
   color: white;
   height: 24px;
   line-height: 44px;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -646,7 +627,6 @@ a {
   margin-top: 50px;
   line-height: 44px;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
   text-decoration: none;
   list-style-type: none;
 }
