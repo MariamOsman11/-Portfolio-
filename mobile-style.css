@@ -458,6 +458,7 @@ header {
 hr.new1 {
   border-top: 1px solid #dfe1e6;
 }
+
 /* footer css */
 .footer-last {
   background-color: #fff;
@@ -625,8 +626,4 @@ hr.new1 {
 
 #heading-list {
   filter: blur(8);
-}
-
-.hidden {
-  display: none;
 }
