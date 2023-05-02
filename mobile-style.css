@@ -458,7 +458,7 @@ header {
 hr.new1 {
   border-top: 1px solid #dfe1e6;
 }
-
+/* footer css */
 .footer-last {
   background-color: #fff;
 }
@@ -612,15 +612,7 @@ hr.new1 {
   color: white;
 }
 
-a {
-  font-size: 26px;
-  text-decoration: none;
-  color: white;
-  height: 24px;
-  line-height: 44px;
-  font-style: normal;
-  font-weight: 400;
-}
+/* insert that code here */
 
 #menu-list {
   margin-left: 40px;
@@ -633,4 +625,8 @@ a {
 
 #heading-list {
   filter: blur(8);
+}
+
+.hidden {
+  display: none;
 }
