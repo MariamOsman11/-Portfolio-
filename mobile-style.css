@@ -613,7 +613,15 @@ hr.new1 {
   color: white;
 }
 
-/* insert that code here */
+a {
+  font-size: 26px;
+  text-decoration: none;
+  color: white;
+  height: 24px;
+  line-height: 44px;
+  font-style: normal;
+  font-weight: 400;
+}
 
 #menu-list {
   margin-left: 40px;
