@@ -269,42 +269,37 @@
           class="contact-form"
           method="post"
         >
-          <label for="user_name">
-            <input
-              type="text"
-              class="user-name"
-              name="user_name"
-              id="user_name"
-              placeholder="Name"
-              required
-              maxlength="30"
-            />
-          </label>
-          <label for="user_email">
-            <input
-              type="email"
-              class="user-email"
-              name="user_email"
-              id="user_email"
-              placeholder="Email"
-              required
-            />
-          </label>
-          <label for="message">
-            <textarea
-              type="text"
-              class="user-message"
-              name="user_message"
-              id="user_message"
-              placeholder="Write your message here"
-              required
-              maxlength="500"
-              cols="10"
-              rows="5"
-            ></textarea>
-          </label>
+        <input
+        type="text"
+        class="user-name"
+        name="user_name"
+        id="user_name"
+        placeholder="Name"
+        required
+        maxlength="30" 
+        aria-label="Enter name"
+        />
+      <input
+      type="email"
+      class="user-email"
+      name="user_email"
+      id="user_email"
+      placeholder="Email"
+      aria-label="Enter email" required
+      />
+      <textarea
+      type="text"
+      class="user-message"
+      name="user_message"
+      id="user_message"
+      placeholder="Write your message here"
+      required
+      maxlength="500"
+      cols="10"
+      rows="5" aria-label="Enter message"
+      ></textarea>
           <div class="btn-center">
-            <button type="button" class="form-btn">Get In Touch</button>
+            <button type="submit" class="form-btn">Get In Touch</button>
           </div>
         </form>
       </div>
