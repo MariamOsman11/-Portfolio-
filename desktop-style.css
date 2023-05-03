@@ -1,0 +1,307 @@
+@media (min-width: 768px) {
+  /* Header Section */
+  .hidden {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .header-title {
+    margin-left: 75px;
+    margin-top: -40px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 70%;
+    margin-top: 27px;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: #344563;
+  }
+
+  /* Portfolio-Homepage Section */
+
+  .hero {
+    padding-bottom: 80px;
+    border-bottom-left-radius: 180px;
+  }
+
+  .hero-intro-container {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 3rem;
+    background-image: url("images/header-shapes\ mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 10rem;
+    padding-bottom: 70px;
+  }
+
+  .hero-container {
+    width: 65%;
+    margin-top: 6rem;
+    margin-left: 260px;
+  }
+
+  .hero-intro-heading {
+    width: 50%;
+    font-size: 48px;
+    line-height: 60px;
+    color: #091e42;
+  }
+
+  .hero-intro-description {
+    width: 110%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .hero-intro {
+    background-image: none;
+  }
+
+  /* Work Section */
+
+  .cards-container {
+    padding: 0 100px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .card-reverse {
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    margin-top: 88px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .card-img {
+    width: 545px;
+    height: 448px;
+    margin: 0;
+    margin: 24px 0;
+    margin-left: 24px;
+    cursor: pointer;
+  }
+
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center;
+  }
+
+  .card-content {
+    width: 48%;
+  }
+
+  .card-title {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+    padding-bottom: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .facebook-card {
+    margin-left: 25px;
+  }
+
+  .card-info {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .bold-info {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .info {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .card-para {
+    margin-top: 0;
+    margin-top: 32px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    margin-bottom: 0;
+  }
+
+  .card-lang {
+    margin-top: 0;
+    margin-top: 24px;
+  }
+
+  .card-btn {
+    margin-top: 20px;
+    background-color: #6070ff;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .card-btn:hover {
+    color: #6070ff;
+    background-color: #fff;
+    transition: 1s ease-in-out;
+  }
+
+  .card-btn:active {
+    color: #fff;
+    background-color: #2230d2;
+    transition: 1s ease-in-out;
+  }
+
+  /* About Section */
+
+  .about-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .about-content {
+    padding-top: 8rem;
+    width: 90%;
+  }
+
+  .about-lang {
+    width: 100%;
+    margin-top: 7rem;
+  }
+
+  .about-icons {
+    padding: 1.5rem 0;
+  }
+
+  .about-btn {
+    border: 1px solid #396df2;
+  }
+
+  .lang-title {
+    padding-left: 1rem;
+  }
+
+  .lang-title h3 {
+    color: #344563;
+  }
+
+  .frame-title {
+    color: #344563;
+  }
+
+  .skill-title {
+    color: #344563;
+  }
+
+  .lang {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    gap: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .langs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%;
+    height: 18vh;
+    padding-top: 0.5rem;
+  }
+
+  .framework,
+  .skill {
+    padding-left: 1rem;
+  }
+
+  /* Footer Section */
+
+  .footer-container {
+    background-image: url("images/contact\ form\ background\ shapes.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8rem;
+    min-height: 100vh;
+  }
+
+  .footer-info {
+    width: 40%;
+  }
+
+  .footer-info .footer-title {
+    padding-top: 6rem;
+  }
+
+  .contact-form {
+    margin-top: 0;
+    gap: 1.5rem;
+  }
+
+  .footer-info .footer-para {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .user-name,
+  .user-message,
+  .user-email {
+    cursor: pointer;
+  }
+
+  .form-btn {
+    margin: 0 auto;
+    width: 40%;
+    margin-bottom: 2rem;
+  }
+}
+

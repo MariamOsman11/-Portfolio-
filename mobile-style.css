@@ -468,9 +468,10 @@ hr.new1 {
   height: auto;
   width: 100%;
   background: #6070ff;
-  background-image: url("../Assets/contact\ form\ shapes-mobile.svg");
+  background-image: url("images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
-  background-size: 480px 735px;
+  background-size: cover;
+  /* background-size: 480px 735px; */
   border-top-left-radius: 100px;
   padding-top: 30px;
 }
@@ -634,4 +635,7 @@ a {
 
 #heading-list {
   filter: blur(8);
+}
+.hidden {
+  display: none;
 }
