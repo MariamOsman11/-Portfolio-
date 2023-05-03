@@ -471,6 +471,7 @@ hr.new1 {
   background-image: url("images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
+
   /* background-size: 480px 735px; */
   border-top-left-radius: 100px;
   padding-top: 30px;
@@ -636,6 +637,7 @@ a {
 #heading-list {
   filter: blur(8);
 }
+
 .hidden {
   display: none;
 }
