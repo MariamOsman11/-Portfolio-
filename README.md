@@ -71,7 +71,7 @@ It is a show of my understanding of Gitflow, use of Linters, HTML5 semantics, CS
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
 
 > Added a link to my deployed project.
 
