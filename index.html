@@ -4,30 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="mobile-style.css">
+    <link rel="stylesheet" href="css/mobile-style.css" />
+    <link rel="stylesheet" href="css/desktop-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <title>Portfolio</title>
+    <title>Mariam's-Portfolio</title>
   </head>
   <body>
-   
-    <div class="hero">
+    <!-- Portfolio Homepage -->
+    <section class="hero ">
+      <!-- Header-Section -->
+      <div class="mobile-menu hidden">
+       
+       <ul id="menu-list" >
+        <li ><a  href="#portflio">Portfolio</a></li>
+        <li ><a href="#about-page">About</a></li>
+        <li ><a href="#contact-me">Contact</a></li>
+        
+      </ul>
+
+      </div>
+      <!--  -->
+      <section id="main-header">
       <header>
         <a href="#" class="header-title">My Logo</a>
         <nav>
-          <ul class="hamburger">
+        
+          <ul  class="nav-links "> 
+            <li ><a  href="#portflio">Portoflio</a></li>
+            <li ><a href="#about-page">About</a></li>
+            <li ><a href="#contact-me">Contact</a></li>
+         
+          </ul>
+
+  
+          <ul class="hamburger" id="hamburger-menu-id"> 
             <li class="stroke"></li>
             <li class="stroke"></li>
             <li class="stroke"></li>
           </ul>
+
         </nav>
+      
       </header>
+  
       <!-- Homepage-Intro-Section -->
-      <main class="hero-intro">
+      <section class="hero-intro">
         <div class="hero-intro-container">
           <div class="hero-container">
             <h1 class="hero-intro-heading">I’m Marian Glad to see you!</h1>
@@ -37,38 +63,39 @@
               like what you see and have a project you need coded, don’t
               hestiate to contact me.
             </p>
-            <h3 class="hero-intro-connect">LET’S CONNECT</h3>
+            <h2 class="hero-intro-connect">LET’S CONNECT</h2>
             <ul class="social-icons">
               <li class="icons">
-                <a href="#"><img src="images/Vector (15).png" alt="Twitter" /></a>
+                <a href="#"><img src="Assets/twitter.svg" alt="Twitter" /></a>
               </li>
               <li class="icons">
                 <a href="#"
-                  ><img src="images/Linkedin icon.png" alt="LinkedIn"
+                  ><img src="Assets/Linkedin icon.svg" alt="LinkedIn"
                 /></a>
               </li>
               <li class="icons">
-                <a href="#"><img src="images/Vector (11).png" alt="Medium" /></a>
+                <a href="#"><img src="Assets/medium.svg" alt="Medium" /></a>
               </li>
               <li class="icons">
-                <a href="#"><img src="images/Vector (12).png" alt="GitHub" /></a>
+                <a href="#"><img src="Assets/github.svg" alt="GitHub" /></a>
               </li>
               <li class="icons">
                 <a href="#"
-                  ><img src="images/Vector (13).png" alt="AngelList"
+                  ><img src="Assets/angellist.svg" alt="AngelList"
                 /></a>
               </li>
             </ul>
           </div>
         </div>
-      </main>
-    </div>
-
+      </section>
+    </section>
+    </section>
     <!-- Work Section -->
     <section class="cards-container" id="portflio">
       <div class="card">
         <div class="card-img">
-          <img src="images/Snapshoot Portfolio.png"
+          <img
+            src="Assets/Snapshoot Portfolio Card1.svg"
             alt="Tonic-project-image"
             title="Tonic-project"
           />
@@ -95,7 +122,7 @@
       <div class="card card-reverse">
         <div class="card-img">
           <img
-            src="images/Snapshoot Portfolio2.png"
+            src="Assets/Snapshoot Portfolio Card2.svg"
             alt="Multi-Post Stories-project-image"
             title="Multi-Post Stories-project"
           />
@@ -103,7 +130,7 @@
         <div class="card-content">
           <h3 class="card-title">Multi-Post Stories</h3>
           <ul class="card-info">
-            <li class="bold-info">CANOPY</li>
+            <li class="bold-info">FACEBOOK</li>
             <li class="info bullet"><span></span>Full Stack Dev</li>
             <li class="info bullet"><span></span>2015</li>
           </ul>
@@ -122,15 +149,15 @@
       <div class="card">
         <div class="card-img">
           <img
-            src="images/Snapshoot Portfolio3.png"
+            src="Assets/Snapshoot Portfolio Card3.svg"
             alt="Facebook 360-project-image"
             title="Facebook 360-project"
           />
         </div>
         <div class="card-content facebook-card">
-          <h3 class="card-title">Tonic</h3>
+          <h3 class="card-title">Facebook 360</h3>
           <ul class="card-info">
-            <li class="bold-info">CANOPY</li>
+            <li class="bold-info">FACEBOOK</li>
             <li class="info bullet"><span></span>Full Stack Dev</li>
             <li class="info bullet"><span></span>2015</li>
           </ul>
@@ -149,17 +176,17 @@
       <div class="card card-reverse">
         <div class="card-img">
           <img
-            src="images/Snapshoot Portfolio4.png"
+            src="Assets/Snapshoot Portfolio Card4.svg"
             alt="Uber Navigation-project-image"
             title="Uber Navigation-project"
           />
         </div>
         <div class="card-content">
-          <h3 class="card-title">Multi-Post Stories</h3>
+          <h3 class="card-title">Uber Navigation</h3>
           <ul class="card-info">
-            <li class="bold-info">CANOPY</li>
+            <li class="bold-info">Uber</li>
             <li class="info bullet"><span></span>Lead Developer</li>
-            <li class="info bullet"><span></span>2015</li>
+            <li class="info bullet"><span></span>2018</li>
           </ul>
           <p class="card-para">
             A daily selection of privately personalized reads; no accounts or
@@ -185,26 +212,24 @@
             you like what you see and have a project you need coded, don't
             hestiate to contact me.
           </p>
-          <h3 class="about-contact">LET'S CONNECT</h3>
-          <ul class="social-icons">
+          <a class="about-contact" href="#">LET'S CONNECT</a>
+          <ul class="about-icons">
             <li class="icons">
-              <a href="#"><img src="images/Vector (15).png" alt="Twitter" /></a>
+              <a href="#"><img src="Assets/twitter.svg" alt="Twitter" /></a>
             </li>
             <li class="icons">
               <a href="#"
-                ><img src="images/Linkedin icon.png" alt="LinkedIn"
+                ><img src="Assets/Linkedin icon.svg" alt="LinkedIn"
               /></a>
             </li>
             <li class="icons">
-              <a href="#"><img src="images/Vector (11).png" alt="Medium" /></a>
+              <a href="#"><img src="Assets/medium.svg" alt="Medium" /></a>
             </li>
             <li class="icons">
-              <a href="#"><img src="images/Vector (12).png" alt="GitHub" /></a>
+              <a href="#"><img src="Assets/github.svg" alt="GitHub" /></a>
             </li>
             <li class="icons">
-              <a href="#"
-                ><img src="images/Vector (13).png" alt="AngelList"
-              /></a>
+              <a href="#"><img src="Assets/angellist.svg" alt="AngelList" /></a>
             </li>
           </ul>
           <button class="about-btn">Get my resume</button>
@@ -213,98 +238,95 @@
           <div class="languages">
             <div class="lang-title">
               <h3>Languages</h3>
-              <img  src="images/Union.svg" alt="arrow" />
+              <img src="Assets/Union Down.svg" alt="arrow" />
             </div>
 
             <ul class="lang">
               <li class="langs">
                 <img
-                 src="images/Ellipse 1.png"
+                  src="Assets/Ellipse JavaScript.svg"
                   alt="JavaScript-Logo"
                 />
                 <h4 class="langs-text">JavaSript</h4>
               </li>
               <li class="langs">
-                <img src="images/Ellipse 2.png" alt="HTML5-Logo" />
+                <img src="Assets/Ellipse HTML5.svg" alt="HTML5-Logo" />
                 <h4 class="langs-text">HTML</h4>
               </li>
               <li class="langs">
-                <img src="images/Ellipse 3.png" alt="CSS3-Logo" />
+                <img src="Assets/Ellipse CSS3.svg" alt="CSS3-Logo" />
                 <h4 class="langs-text">CSS</h4>
               </li>
             </ul>
           </div>
           <div>
-            <ul>
             <div class="framework">
-             
-             <li><h4 class="frame-title">Frameworks</h4></li>
-           <li><img src="images/Union2.svg" alt="arrow" /></li>   
+              <h4 class="frame-title">Frameworks</h4>
+
+              <img src="Assets/Union Left.svg" alt="arrow" />
             </div>
             <hr class="new1" />
           </div>
           <div>
             <div class="skill">
-             <li><h4 class="skill-title">Skills</h4></li> 
-             <li><img  src="images/Union2.svg" alt="arrow" /></li>
+              <h4 class="skill-title">Skills</h4>
+              <img src="Assets/Union Left.svg" alt="arrow" />
             </div>
-           <hr class="new1" />
+            <hr class="new1" />
           </div>
-        </ul>
         </div>
-    </section>
-
-   <!-- Footer Section -->
-   <footer class="footer-last">
-    <div class="footer-container" id="contact-me">
-      <div class="footer-info">
-        <h2 class="footer-title">Contact me</h2>
-        <p class="footer-para">
-          If you have an application you are interested in developing, a
-          feature that you need built or a project that needs coding. I'd love
-          to help with it
-        </p>
-        <form
-          action="https://formspree.io/f/mqkoabao"
-          class="contact-form"
-          method="post"
-        >
-        <input
-        type="text"
-        class="user-name"
-        name="user_name"
-        id="user_name"
-        placeholder="Name"
-        required
-        maxlength="30" 
-        aria-label="Enter name"
-        />
-      <input
-      type="email"
-      class="user-email"
-      name="user_email"
-      id="user_email"
-      placeholder="Email"
-      aria-label="Enter email" required
-      />
-      <textarea
-      type="text"
-      class="user-message"
-      name="user_message"
-      id="user_message"
-      placeholder="Write your message here"
-      required
-      maxlength="500"
-      cols="10"
-      rows="5" aria-label="Enter message"
-      ></textarea>
-          <div class="btn-center">
-            <button type="submit" class="form-btn">Get In Touch</button>
-          </div>
-        </form>
       </div>
-    </div>
-  </footer>
-                
-    </body>
-    </html>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer-last">
+      <div class="footer-container" id="contact-me">
+        <div class="footer-info">
+          <h2 class="footer-title">Contact me</h2>
+          <p class="footer-para">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I'd love
+            to help with it
+          </p>
+          <form
+            action="https://formspree.io/f/mqkoabao"
+            class="contact-form"
+            method="post">
+
+              <input
+                type="text"
+                class="user-name"
+                name="user_name"
+                id="user_name"
+                placeholder="Name"
+                required
+                maxlength="30" aria-label="write your name">
+              <input
+                type="email"
+                class="user-email"
+                name="user_email"
+                id="user_email"
+                placeholder="Email"
+                required  aria-label="write your email"/>
+              <textarea
+                type="text"
+                class="user-message"
+                name="user_message"
+                id="user_message"
+                placeholder="Write your message here"
+                required
+                maxlength="500"
+                cols="10"
+                rows="5"
+             aria-label="write your message" ></textarea>
+            </label>
+            <div class="btn-center">
+              <button type="submit" class="form-btn">Get In Touch</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./mobile-menu.js"></script>
+  </body>
+</html>

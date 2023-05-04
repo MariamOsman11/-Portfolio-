@@ -71,11 +71,11 @@ It is a show of my understanding of Gitflow, use of Linters, HTML5 semantics, CS
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
 
 > Added a link to my deployed project.
 
-- [Live Demo Link](https://mariamosman11.github.io/Portflio/)
+<!-- - [Live Demo Link](https://mariamosman11.github.io/-Portflio-/) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
