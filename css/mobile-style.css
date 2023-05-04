@@ -11,23 +11,19 @@
 body {
   background: #f7f7f9;
   height: auto;
-  font-family: "Poppins", sans-serif;
+  z-index: 0;
 }
 
+/* .hidden {
+  display: block;
+} */
+
 .hero {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   background: #fff;
   border-bottom-left-radius: 100px;
   padding-bottom: 30px;
-}
-
-.header-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: #6070ff;
-  cursor: pointer;
-  text-decoration: none;
 }
 
 header {
@@ -38,6 +34,15 @@ header {
   margin: 1em auto;
   margin-top: 0;
   padding-top: 16px;
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .hamburger {
@@ -65,7 +70,7 @@ header {
 .hero-intro {
   width: 100%;
   height: auto;
-  background-image: url("images/header-shapes\ mobile.png");
+  background-image: url("../Assets/header-shapes\ mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -143,6 +148,7 @@ header {
 }
 
 .card-title {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -162,6 +168,7 @@ header {
 
 .bold-info {
   list-style-type: none;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -182,6 +189,7 @@ header {
 }
 
 .info {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -193,6 +201,7 @@ header {
 }
 
 .card-para {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -210,6 +219,7 @@ header {
 }
 
 .lang1 {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -223,6 +233,7 @@ header {
 
 .card-btn {
   margin: 12px 15px;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -230,7 +241,7 @@ header {
   letter-spacing: 0.03em;
   color: #396df2;
   background: #fff;
-  border: 1px solid #6070ff;
+  border: 1px solid #396df2;
   border-radius: 10px;
   padding: 12px;
   margin-bottom: 26px;
@@ -238,7 +249,7 @@ header {
 
 .card-btn:hover {
   color: #fff;
-  background-color: #6070ff;
+  background-color: #396df2;
   transition: 1s ease-in-out;
 }
 
@@ -265,6 +276,8 @@ header {
 }
 
 .about-title {
+  font-family: "Poppins", sans-serif;
+  width: 40%;
   padding-bottom: 14px;
   font-style: normal;
   font-weight: 700;
@@ -277,6 +290,7 @@ header {
 
 .about-para {
   padding-bottom: 14px;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -285,6 +299,7 @@ header {
 }
 
 .about-contact {
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -308,12 +323,13 @@ header {
 
 .about-btn {
   cursor: pointer;
-  border: 1px solid #6070ff;
+  border: 1px solid #396df2;
   height: 7vh;
   border-radius: 10px;
   width: max-content;
   padding: 8px;
   background: #fff;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -324,12 +340,11 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #396df2;
-  margin-top: -50px;
 }
 
 .about-btn:hover {
   color: #fff;
-  background-color: #6070ff;
+  background-color: #396df2;
   transition: 1s ease-in-out;
 }
 
@@ -357,6 +372,7 @@ header {
 
 .lang-title h3 {
   padding-bottom: 16px;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -394,6 +410,7 @@ header {
 }
 
 .langs-text {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -409,10 +426,10 @@ header {
   padding-top: 0.7rem;
   width: 100%;
   height: 13vh;
-  list-style-type: none;
 }
 
 .frame-title {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.3rem;
@@ -436,10 +453,10 @@ header {
   width: 100%;
   height: 11vh;
   padding-top: 0.7rem;
-  list-style-type: none;
 }
 
 .skill-title {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.3rem;
@@ -459,7 +476,6 @@ hr.new1 {
   border-top: 1px solid #dfe1e6;
 }
 
-/* footer css */
 .footer-last {
   background-color: #fff;
 }
@@ -468,11 +484,9 @@ hr.new1 {
   height: auto;
   width: 100%;
   background: #6070ff;
-  background-image: url("images/header-shapes\ mobile.png");
+  background-image: url("../Assets/contact\ form\ shapes-mobile.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-
-  /* background-size: 480px 735px; */
+  background-size: 480px 735px;
   border-top-left-radius: 100px;
   padding-top: 30px;
 }
@@ -484,6 +498,7 @@ hr.new1 {
 }
 
 .footer-title {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -496,6 +511,7 @@ hr.new1 {
 
 .footer-para {
   width: 95%;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -521,6 +537,7 @@ hr.new1 {
   border-radius: 8px;
   border: none;
   padding: 1rem;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -540,6 +557,7 @@ hr.new1 {
   border: none;
   width: 100%;
   padding: 1rem;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -559,6 +577,7 @@ hr.new1 {
   cursor: pointer;
   background: #fff;
   border-radius: 8px;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -572,10 +591,6 @@ hr.new1 {
   color: #fff;
   background-color: #2230d2;
   transition: 1s ease-in-out;
-}
-
-.form-btn:active {
-  background-color: white;
 }
 
 .btn-center {
@@ -602,6 +617,7 @@ hr.new1 {
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
+  font-family: "Poppins", sans-serif;
   color: white;
   backdrop-filter: blur(7px);
 }
@@ -621,6 +637,7 @@ a {
   color: white;
   height: 24px;
   line-height: 44px;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -630,12 +647,13 @@ a {
   margin-top: 50px;
   line-height: 44px;
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   list-style-type: none;
 }
 
 #heading-list {
-  filter: blur(8);
+  filter: blur(8px);
 }
 
 .hidden {

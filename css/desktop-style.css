@@ -13,15 +13,13 @@
   }
 
   .header-title {
-    margin-left: 75px;
-    margin-top: -40px;
+    margin-left: 80px;
   }
 
   .nav-links {
     display: flex;
     gap: 1.5rem;
-    margin-left: 70%;
-    margin-top: 27px;
+    margin-right: 3.5rem;
     list-style-type: none;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -46,7 +44,7 @@
     width: 100%;
     min-height: 100vh;
     margin-top: 3rem;
-    background-image: url("images/header-shapes\ mobile.png");
+    background-image: url("../Assets/Desktop-BG-Image.svg");
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 10rem;
@@ -263,7 +261,7 @@
   /* Footer Section */
 
   .footer-container {
-    background-image: url("images/contact\ form\ background\ shapes.svg");
+    background-image: url("../Assets/contact\ form\ background\ Image.svg");
     background-repeat: no-repeat;
     background-size: cover;
     border-top-left-radius: 8rem;
@@ -304,3 +302,7 @@
     margin-bottom: 2rem;
   }
 }
+
+/* .hidden{
+  display:none;
+} */
