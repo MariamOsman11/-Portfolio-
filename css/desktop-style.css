@@ -183,13 +183,13 @@
   .card-btn:hover {
     color: #6070ff;
     background-color: #fff;
-    /* 186 */
+    transition: 1s ease-in-out;
   }
 
   .card-btn:active {
     color: #fff;
     background-color: #2230d2;
-   /* here */
+    transition: 1s ease-in-out;
   }
 
   /* About Section */
