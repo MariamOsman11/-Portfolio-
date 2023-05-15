@@ -53,6 +53,13 @@ header {
   cursor: pointer;
 }
 
+#mobile-menu-close-icon {
+  position: absolute;
+  top: 18px;
+  right: 38px;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
