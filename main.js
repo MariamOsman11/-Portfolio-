@@ -12,3 +12,6 @@ function closemenu() {
 }
 closingmenu.addEventListener('click', closemenu);
 menuList.addEventListener('click', closemenu);
+
+//popup window
+

@@ -302,3 +302,29 @@
     margin-bottom: 2rem;
   }
 }
+/* desktop popup-window */
+.poppup-window{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color:#C1C7D0;
+  mix-blend-mode: multiply;
+  left: 0;
+  top: 0;
+  z-index:999999;
+}
+.window-wrapper{
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  margin: 4%;
+  background-color: white;
+  z-index: 1;
+
+}
+.clossing-project{
+float:right;
+margin-right: 2%;
+margin-top: 2%;
+  
+}
