@@ -13,4 +13,149 @@ function closemenu() {
 closingmenu.addEventListener('click', closemenu);
 menuList.addEventListener('click', closemenu);
 
-// popup window
+
+// Project popup code starts here
+const projectData = [
+   {
+     id: 0,
+     name: "Tonic",
+     tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
+     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+     image: "Assets/Snapshoot Portfolio Card1.svg",
+     technologies: ["Html", "CSS", "Javascript", "Python"],
+     live_link: "www.google.com",
+     source_link: "www.google.com"
+   },
+   {
+     id: 1,
+     name: "Multi-Post Stories",
+     tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
+     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+     image: "Assets/Snapshoot Portfolio Card2.svg",
+     technologies: ["Html", "CSS", "Javascript", "Ruby"],
+     live_link: "www.google.com",
+     source_link: "www.google.com"
+   },
+   {
+     id: 2,
+     name: "Tonic",
+     tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
+     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+     image: "Assets/Snapshoot Portfolio Card3.svg",
+     technologies: ["Html", "CSS", "Javascript", "Python"],
+     live_link: "www.google.com",
+     source_link: "www.google.com"
+   },
+   {
+     id: 3,
+     name: "Multi-Post Stories",
+     tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
+     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+     image: "Assets/Snapshoot Portfolio Card4.svg",
+     technologies: ["Html", "CSS", "Javascript", "Ruby"],
+     live_link: "www.google.com",
+     source_link: "www.google.com"
+   }
+ ];
+ 
+ function insertTechList(data) {
+   let techList = "";
+   data.technologies.map(insertTech);
+   function insertTech(data) {
+     techList += `<li>${data}</li>`;
+   };
+   return techList;
+ }
+ 
+ (function loadProjectData() {
+   let htmlSkeletonToInsert = "";
+   projectData.map(insertData)
+   function insertData(data, index) {
+     const techList = insertTechList(data)
+     htmlSkeletonToInsert += `<div class="card">
+     <div class="card-img">
+       <img
+         src="${data.image}"
+         alt="Tonic-project-image"
+         title="Tonic-project"
+       />
+     </div>
+     <div class="card-content facebook-card">
+       <h3 class="card-title">${data.name}</h3>
+       <ul class="card-info">
+         <li class="bold-info">${data.tag.sector}</li>
+         <li class="info bullet"><span></span>${data.tag.type}</li>
+         <li class="info bullet"><span></span>${data.tag.year}</li>
+       </ul>
+       <p class="card-para">
+         ${data.description}
+       </p>
+       <ul class="card-lang">
+         ${techList}
+       </ul>
+       <button class="card-btn" data-value="${index}">See Project</button>
+     </div>
+   </div>
+     `;
+   }
+   document.getElementById("portflio").innerHTML = htmlSkeletonToInsert;
+ })();
+ 
+ const closeElemPopup = document.getElementsByClassName("clossing-project")[0];
+ closeElemPopup.addEventListener("click", closeProjectPopup)
+ 
+ function closeProjectPopup() {
+   console.log("clicked");
+   document.getElementsByClassName('popup-section')[0].style.display = 'none';
+ }
+ 
+ const triggerElem = document.getElementsByClassName("card-btn");
+ for (let i = 0; i < triggerElem.length; i += 1){
+   triggerElem[i].addEventListener("click", (e) => {openProjectPopup(e)});
+ }
+ 
+ function openProjectPopup(e) {
+   e.preventDefault();
+   console.log(e)
+   let targetIndex = e.target.attributes[1].value
+   const techList = insertTechList(projectData[targetIndex])
+ 
+   let elemToInsert = `<h3 class="title work-title">
+     ${projectData[targetIndex].name}
+     </h3>
+     <div class="work-info">
+     <ul class="work-tag-popup">
+         <li class="first-li">CANOPY</li>
+         <li>Back End Dev</li>
+         <li>2015</li>
+     </ul>
+     </div>
+     <img src="${projectData[targetIndex].image}" alt="" id="project-popup-image">
+     <div class="work-tag-button-wrapper">
+     <p class="work-description">
+     ${projectData[targetIndex].description}
+     </p>
+     <div>
+     <div class="work-tag">
+     <ul>
+     ${techList}
+     </ul>
+     </div>
+     <div class="project-link-div project-link-div-sec">
+     <a href="${projectData[targetIndex].live_link}" class="project-link live-link" target="_blank">
+         See Live
+         <img src="./assets/image/line-link-icon.svg" alt="" class="link-link-icon">
+         </a>
+     <a href="${projectData[targetIndex].live_link}" class="project-link live-link" target="_blank">
+         See Source
+         <img src="./assets/image/github-source-icon.svg" alt="" class="link-link-icon">
+     </a>
+     </div>
+     </div>
+     </div>`
+ 
+   console.log("clicked", targetIndex);
+   document.getElementsByClassName('window-wrapper')[0].innerHTML = elemToInsert;
+   document.getElementsByClassName('popup-section')[0].style.display = 'block';
+ }
+ 
