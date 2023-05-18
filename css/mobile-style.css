@@ -405,7 +405,7 @@ header {
   background: #fff;
 }
 
-.langs {
+ /* .langs {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -414,7 +414,7 @@ header {
   border-radius: 8px;
   height: 11vh;
   padding-left: 0.5rem;
-}
+}  */
 
 .langs-text {
   font-family: "Poppins", sans-serif;

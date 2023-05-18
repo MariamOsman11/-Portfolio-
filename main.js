@@ -19,40 +19,44 @@ const projectData = [
    {
      id: 0,
      name: "Tonic",
-     tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
+     tag: {sector: "Canopy", type: "Band End Dev", year: 2015},
      description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
      image: "Assets/Snapshoot Portfolio Card1.svg",
-     technologies: ["Html", "CSS", "Javascript", "Python"],
+     details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
+     technologies: ["Html", "Ruby", "CSS", "JavaScript"],
      live_link: "www.google.com",
      source_link: "www.google.com"
    },
    {
      id: 1,
      name: "Multi-Post Stories",
-     tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
+     tag: {sector: "Canopy", type: "Band End Dev", year: 2015},
      description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
      image: "Assets/Snapshoot Portfolio Card2.svg",
-     technologies: ["Html", "CSS", "Javascript", "Ruby"],
+     details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
+     technologies: ["Html", "Ruby", "CSS", "JavaScript"],
      live_link: "www.google.com",
      source_link: "www.google.com"
    },
    {
      id: 2,
      name: "Tonic",
-     tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
+     tag: {sector: "Canopy", type: "Band End Dev", year: 2015},
      description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
      image: "Assets/Snapshoot Portfolio Card3.svg",
-     technologies: ["Html", "CSS", "Javascript", "Python"],
+     details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
+     technologies: ["Html", "Ruby", "CSS", "JavaScript"],
      live_link: "www.google.com",
      source_link: "www.google.com"
    },
    {
      id: 3,
      name: "Multi-Post Stories",
-     tag: {sector: "Caopy", type: "Band End Dev", year: 2015},
+     tag: {sector: "Canopy", type: "Band End Dev", year: 2015},
      description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
      image: "Assets/Snapshoot Portfolio Card4.svg",
-     technologies: ["Html", "CSS", "Javascript", "Ruby"],
+     details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
+     technologies: ["Html", "Ruby", "CSS", "JavaScript"],
      live_link: "www.google.com",
      source_link: "www.google.com"
    }
@@ -62,7 +66,7 @@ const projectData = [
    let techList = "";
    data.technologies.map(insertTech);
    function insertTech(data) {
-     techList += `<li>${data}</li>`;
+     techList += `<li class="langs">${data}</li>`;
    };
    return techList;
  }
@@ -91,8 +95,8 @@ const projectData = [
          ${data.description}
        </p>
        <ul class="card-lang">
-         ${techList}
-       </ul>
+      ${techList}
+      </ul>
        <button class="card-btn" data-value="${index}">See Project</button>
      </div>
    </div>
@@ -126,18 +130,18 @@ const projectData = [
      <div class="work-info">
      <ul class="work-tag-popup">
          <li class="first-li">CANOPY</li>
-         <li>Back End Dev</li>
-         <li>2015</li>
+         <li class="second-li">Back End Dev</li>
+         <li class="second-li">2015</li>
      </ul>
      </div>
      <img src="${projectData[targetIndex].image}" alt="" id="project-popup-image">
      <div class="work-tag-button-wrapper">
      <p class="work-description">
-     ${projectData[targetIndex].description}
+     ${projectData[targetIndex].details}
      </p>
      <div>
      <div class="work-tag">
-     <ul>
+     <ul class="card-lang">
      ${techList}
      </ul>
      </div>

@@ -136,6 +136,7 @@
   .card-info {
     margin-top: 0;
     margin-bottom: 0;
+  
   }
 
   .bold-info {
@@ -168,17 +169,17 @@
     margin-bottom: 0;
   }
 
-  .card-lang {
+  /* .card-lang {
     margin-top: 0;
     margin-top: 24px;
-  }
+  } */
 
-  .card-btn {
+  /* .card-btn {
     margin-top: 20px;
     background-color: #6070ff;
     color: #fff;
     cursor: pointer;
-  }
+  } */
 
   .card-btn:hover {
     color: #6070ff;
@@ -243,7 +244,7 @@
     border-radius: 0.5rem;
   }
 
-  .langs {
+  /* .langs {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -251,7 +252,7 @@
     width: 30%;
     height: 18vh;
     padding-top: 0.5rem;
-  }
+  } */
 
   .framework,
   .skill {
@@ -341,4 +342,53 @@
 
 .card:nth-child(even) {
   flex-direction: row-reverse;
+}
+.card-lang{
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  list-style-type: none;
+  margin: 12px 15px;
+}
+
+.langs{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+
+}
+
+.work-title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 52px;
+  color: #091E42;
+  margin-left: 1%;
+  
+  
+}
+
+.work-tag-popup{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6b778c;
+  display: flex;
+  justify-content: flex-start;
+ text-decoration: none;
+ list-style-type: none;
+ gap: 12px;
+ margin-bottom: 12px;
+ margin-top: 6px;
+ 
+
+
 }
