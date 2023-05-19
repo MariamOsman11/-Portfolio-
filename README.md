@@ -129,7 +129,7 @@ To run tests, run the following command:
 
 - GitHub: https://github.com/MariamOsman11
 - Twitter: https://twitter.com/@Mariannaloveee
-- Linkedln: https://www.linkedin.com/in/marian-isman-a57b75226/
+- [LinkedIn](https://www.linkedin.com/in/marian-isman-a57b75226/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
