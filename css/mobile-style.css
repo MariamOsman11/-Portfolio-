@@ -630,10 +630,6 @@ hr.new1 {
   visibility: visible;
 }
 
-/* .hide {
-  visibility: hidden;
-} */
-
 #closingmenu {
   margin-left: 92%;
   margin-top: 2%;
@@ -752,14 +748,6 @@ a {
 .first-li {
   font-size: 15px;
 }
-
-/* .work-description-mobile {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  color: #344563;
-} */
 
 .see-container {
   display: flex;
