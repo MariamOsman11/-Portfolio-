@@ -327,7 +327,7 @@
 }
 
 .window-wrapper {
-  font-family: 'Poppins' sans-serif;
+  font-family: "Poppins", sans-serif;
   position: relative;
   width: 90vw;
   height: 90vh;
@@ -407,7 +407,7 @@
 }
 
 .work-description {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 100%;
   height: auto;
   font-weight: 500;

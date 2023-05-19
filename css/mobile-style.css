@@ -761,13 +761,6 @@ a {
   color: #344563;
 } */
 
-.contact-line {
-  border: 0.5px solid #ebecf0;
-  margin-bottom: 20px;
-  width: 250px;
-  margin-left: 15px;
-}
-
 .see-container {
   display: flex;
   gap: 10px;
