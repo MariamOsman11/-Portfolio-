@@ -803,6 +803,11 @@ a {
 .work-mobile-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: row;
+  justify-content: center;
   margin: 20px auto;
+}
+
+.work-tag-button-wrapper {
+  display: flex;
+  flex-direction: column;
 }

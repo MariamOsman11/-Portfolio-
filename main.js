@@ -138,13 +138,12 @@ function openProjectPopup(e) {
      <p class="work-description work-description-mobile">
      ${projectData[targetIndex].details}
      </p>
-     <div>
+     <div class="work-tag-wrapper">
      <div class="work-tag">
      <ul class="card-lang">
      ${techList}
      </ul>
      </div>
-     <hr class="contact-line">
      <div class="see-container">
      <a href="https://github.com/MariamOsman11/-Portfolio-.git" id="popup-link" class="see-live" target="_blank">
      <span>seeLive</span>
