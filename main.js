@@ -13,70 +13,68 @@ function closemenu() {
 closingmenu.addEventListener('click', closemenu);
 menuList.addEventListener('click', closemenu);
 
-
 // Project popup code starts here
 const projectData = [
-   {
-     id: 0,
-     name: "Tonic",
-     tag: {sector: "Canopy", type: "Band End Dev", year: 2015},
-     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-     image: "Assets/Snapshoot Portfolio Card1.svg",
-     details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
-     technologies: ["Html", "Ruby", "CSS", "JavaScript"],
-     live_link: "www.google.com",
-     source_link: "www.google.com"
-   },
-   {
-     id: 1,
-     name: "Multi-Post Stories",
-     tag: {sector: "Canopy", type: "Band End Dev", year: 2015},
-     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-     image: "Assets/Snapshoot Portfolio Card2.svg",
-     details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
-     technologies: ["Html", "Ruby", "CSS", "JavaScript"],
-     live_link: "www.google.com",
-     source_link: "www.google.com"
-   },
-   {
-     id: 2,
-     name: "Tonic",
-     tag: {sector: "Canopy", type: "Band End Dev", year: 2015},
-     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-     image: "Assets/Snapshoot Portfolio Card3.svg",
-     details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
-     technologies: ["Html", "Ruby", "CSS", "JavaScript"],
-     live_link: "www.google.com",
-     source_link: "www.google.com"
-   },
-   {
-     id: 3,
-     name: "Multi-Post Stories",
-     tag: {sector: "Canopy", type: "Band End Dev", year: 2015},
-     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-     image: "Assets/Snapshoot Portfolio Card4.svg",
-     details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
-     technologies: ["Html", "Ruby", "CSS", "JavaScript"],
-     live_link: "www.google.com",
-     source_link: "www.google.com"
-   }
- ];
- 
- function insertTechList(data) {
-   let techList = "";
-   data.technologies.map(insertTech);
-   function insertTech(data) {
-     techList += `<li class="tech-langs">${data}</li>`;
-   };
-   return techList;
- }
- 
- (function loadProjectData() {
-   let htmlSkeletonToInsert = "";
-   projectData.map(insertData)
-   function insertData(data, index) {
-     const techList = insertTechList(data)
-     htmlSkeletonToInsert += `<div class="card">
+  {
+    id: 0,
+    name: 'Tonic',
+    tag: { sector: 'Canopy', type: 'Band End Dev', year: 2015 },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'Assets/Snapshoot Portfolio Card1.svg',
+    details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
+    technologies: ['Html', 'Ruby', 'CSS', 'JavaScript'],
+    live_link: 'www.google.com',
+    source_link: 'www.google.com',
+  },
+  {
+    id: 1,
+    name: 'Multi-Post Stories',
+    tag: { sector: 'Canopy', type: 'Band End Dev', year: 2015 },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'Assets/Snapshoot Portfolio Card2.svg',
+    details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
+    technologies: ['Html', 'Ruby', 'CSS', 'JavaScript'],
+    live_link: 'www.google.com',
+    source_link: 'www.google.com',
+  },
+  {
+    id: 2,
+    name: 'Tonic',
+    tag: { sector: 'Canopy', type: 'Band End Dev', year: 2015 },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'Assets/Snapshoot Portfolio Card3.svg',
+    details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
+    technologies: ['Html', 'Ruby', 'CSS', 'JavaScript'],
+    live_link: 'www.google.com',
+    source_link: 'www.google.com',
+  },
+  {
+    id: 3,
+    name: 'Multi-Post Stories',
+    tag: { sector: 'Canopy', type: 'Band End Dev', year: 2015 },
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'Assets/Snapshoot Portfolio Card4.svg',
+    details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
+    technologies: ['Html', 'Ruby', 'CSS', 'JavaScript'],
+    live_link: 'www.google.com',
+    source_link: 'www.google.com',
+  },
+];
+
+function insertTechList(data) {
+  let techList = '';
+  function insertTech(data) {
+    techList += `<li class="tech-langs">${data}</li>`;
+  }
+  data.technologies.map(insertTech);
+  return techList;
+}
+
+(function loadProjectData() {
+  let htmlSkeletonToInsert = '';
+  function insertData(data, index) {
+    const techList = insertTechList(data);
+    htmlSkeletonToInsert += `<div class="card">
      <div class="card-img">
        <img
          src="${data.image}"
@@ -101,27 +99,22 @@ const projectData = [
      </div>
    </div>
      `;
-   }
-   document.getElementById("portflio").innerHTML = htmlSkeletonToInsert;
- })();
- 
+  }
+  projectData.map(insertData);
+  document.getElementById('portflio').innerHTML = htmlSkeletonToInsert;
+}());
 
- 
- function closeProjectPopup() {
-   document.getElementsByClassName('popup-section')[0].style.display = 'none';
- }
- 
- const triggerElem = document.getElementsByClassName("card-btn");
- for (let i = 0; i < triggerElem.length; i += 1){
-   triggerElem[i].addEventListener("click", (e) => {openProjectPopup(e)});
- }
- 
- function openProjectPopup(e) {
-   e.preventDefault();
-   let targetIndex = e.target.attributes[1].value
-   const techList = insertTechList(projectData[targetIndex])
- 
-   let elemToInsert = `
+function closeProjectPopup() {
+  document.getElementsByClassName('popup-section')[0].style.display = 'none';
+}
+
+const triggerElem = document.getElementsByClassName('card-btn');
+function openProjectPopup(e) {
+  e.preventDefault();
+  const targetIndex = e.target.attributes[1].value;
+  const techList = insertTechList(projectData[targetIndex]);
+
+  const elemToInsert = `
    <h3 class="title work-title">
      ${projectData[targetIndex].name}
      <img  class="clossing-project"src="images/Iconx.png" alt="">
@@ -141,7 +134,7 @@ const projectData = [
      </ul>
      </div>
      <img src="${projectData[targetIndex].image}" alt="" class="popup-image mobile-pop-img">
-     <div class="work-tag-button-wrapper  work-btn-mobile">
+     <div class="work-tag-button-wrapper  work-mobile-wrapper">
      <p class="work-description work-description-mobile">
      ${projectData[targetIndex].details}
      </p>
@@ -162,10 +155,13 @@ const projectData = [
      <img src="./images/github.png" class="see-image">
      </a>
      </div>
-     </div>`
- 
-   document.getElementsByClassName('window-wrapper')[0].innerHTML = elemToInsert;
-   document.getElementsByClassName('popup-section')[0].style.display = 'block';
-   const closeElemPopup = document.getElementsByClassName("clossing-project")[0];
-   closeElemPopup.addEventListener("click", closeProjectPopup)
- }
+     </div>`;
+
+  document.getElementsByClassName('window-wrapper')[0].innerHTML = elemToInsert;
+  document.getElementsByClassName('popup-section')[0].style.display = 'block';
+  const closeElemPopup = document.getElementsByClassName('clossing-project')[0];
+  closeElemPopup.addEventListener('click', closeProjectPopup);
+}
+for (let i = 0; i < triggerElem.length; i += 1) {
+  triggerElem[i].addEventListener('click', (e) => { openProjectPopup(e); });
+}

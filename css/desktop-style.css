@@ -137,7 +137,6 @@
   .card-info {
     margin-top: 0;
     margin-bottom: 0;
-  
   }
 
   .bold-info {
@@ -331,7 +330,7 @@
   float: right;
   margin-right: 2%;
   margin-top: 2%;
- 
+  cursor: pointer;
 }
 
 .popup-section {
@@ -339,20 +338,15 @@
   display: none;
 }
 
-.clossing-project {
-  cursor: pointer;
-}
-
-
- .card-lang{
+.card-lang {
   display: flex;
   justify-content: flex-start;
   gap: 8px;
   list-style-type: none;
   margin: 12px 15px;
-} 
+}
 
-.tech-langs{
+.tech-langs {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -362,21 +356,18 @@
   padding: 4px 12px;
   background: #ebebff;
   border-radius: 8px;
+}
 
-} 
-
-.work-title{
+.work-title {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 52px;
-  color: #091E42;
+  color: #091e42;
   margin-left: 1%;
-  
-  
 }
 
-.work-tag-popup{
+.work-tag-popup {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -384,24 +375,26 @@
   color: #6b778c;
   display: flex;
   justify-content: flex-start;
- text-decoration: none;
- list-style-type: none;
- gap: 12px;
- margin-bottom: 12px;
- margin-top: 6px;
-
+  text-decoration: none;
+  list-style-type: none;
+  gap: 12px;
+  margin-bottom: 12px;
+  margin-top: 6px;
 }
+
 .popup-image {
   width: 100%;
   height: 50%;
   object-fit: cover;
   margin: 20px auto;
 }
+
 .work-tag-button-wrapper {
   display: flex;
   flex-direction: row;
   margin: 20px auto;
 }
+
 .work-description {
   width: 700px;
   height: 113px;
@@ -410,17 +403,20 @@
   line-height: 30px;
   color: #344563;
 }
+
 .contact-line {
   border: 0.5px solid #ebecf0;
   margin-bottom: 20px;
   width: 250px;
   margin-left: 15px;
 }
+
 .see-container {
   display: flex;
   gap: 10px;
   margin: auto;
 }
+
 .see-container span {
   font-size: 17px;
   font-style: normal;
