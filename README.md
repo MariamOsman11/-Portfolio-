@@ -127,9 +127,10 @@ To run tests, run the following command:
 
 👤 **Author1**
 
-- GitHub: https://github.com/MariamOsman
+- GitHub: https://github.com/MariamOsman11
 - Twitter: https://twitter.com/@Mariannaloveee
-- LinkedIn: https://http//www.linkedin.com/in/marian-isman-a57b75226
+- Linkedln: https://www.linkedin.com/in/marian-isman-a57b75226/
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
