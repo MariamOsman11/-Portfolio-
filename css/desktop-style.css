@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   /* Header Section */
   .hidden {
     display: none;
@@ -78,12 +78,15 @@
 
   .cards-container {
     padding: 0 100px;
+    width: 100%;
   }
 
   .card {
     display: flex;
     flex-direction: row;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .card-reverse {
@@ -98,17 +101,17 @@
   }
 
   .card-img {
-    width: 545px;
-    height: 448px;
+    width: 50%;
+    height: auto;
     margin: 0;
-    margin: 24px 0;
+    margin: 0 auto;
     margin-left: 24px;
     cursor: pointer;
   }
 
   .card-img img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     overflow: hidden;
     object-position: center;
@@ -131,6 +134,7 @@
 
   .facebook-card {
     margin-left: 25px;
+    padding-top: 40px;
   }
 
   .card-info {
@@ -166,18 +170,6 @@
     line-height: 24px;
     color: #344563;
     margin-bottom: 0;
-  }
-
-  .card-lang {
-    margin-top: 0;
-    margin-top: 24px;
-  }
-
-  .card-btn {
-    margin-top: 20px;
-    background-color: #6070ff;
-    color: #fff;
-    cursor: pointer;
   }
 
   .card-btn:hover {
@@ -243,16 +235,6 @@
     border-radius: 0.5rem;
   }
 
-  .langs {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 30%;
-    height: 18vh;
-    padding-top: 0.5rem;
-  }
-
   .framework,
   .skill {
     padding-left: 1rem;
@@ -301,4 +283,148 @@
     width: 40%;
     margin-bottom: 2rem;
   }
+
+  .work-tag-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    justify-content: space-between;
+  }
+}
+
+/* desktop popup-window */
+.poppup-window {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 10, 30, 0.5);
+  mix-blend-mode: multiply;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+}
+
+.window-wrapper {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  margin: 4%;
+  background-color: white;
+  z-index: 1;
+  padding: 20px;
+}
+
+.clossing-project {
+  float: right;
+  margin-right: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+.popup-section {
+  position: fixed;
+  display: none;
+}
+
+.card-lang {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  list-style-type: none;
+  margin: 12px 15px;
+}
+
+.tech-langs {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
+.work-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 52px;
+  color: #091e42;
+  margin-left: 1%;
+}
+
+.work-tag-popup {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6b778c;
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  list-style-type: none;
+  gap: 12px;
+  margin-bottom: 12px;
+  margin-top: 6px;
+}
+
+.popup-image {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  margin: 20px auto;
+}
+
+.work-tag-button-wrapper {
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+.work-description {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: auto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #344563;
+  padding-right: 30px;
+}
+
+.work-tag-wrapper {
+  width: 50%;
+}
+
+.see-container {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+  border-top: 1px solid #ebecf0;
+  padding-top: 15px;
+}
+
+.see-container span {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.see-live {
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  color: #396df2;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
