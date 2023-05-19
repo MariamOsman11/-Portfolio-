@@ -4,11 +4,11 @@ const mobileMenuContainer = document.querySelector('.mobile-menu');
 const menuList = document.querySelector('#menu-list');
 
 function openmenu() {
-  mobileMenuContainer.classList.remove('hidden');
+  mobileMenuContainer.classList.add('show');
 }
 hamburgermenu.addEventListener('click', openmenu);
 function closemenu() {
-  mobileMenuContainer.classList.add('hidden');
+  mobileMenuContainer.classList.remove('show');
 }
 closingmenu.addEventListener('click', closemenu);
 menuList.addEventListener('click', closemenu);
@@ -66,7 +66,7 @@ const projectData = [
    let techList = "";
    data.technologies.map(insertTech);
    function insertTech(data) {
-     techList += `<li class="langs">${data}</li>`;
+     techList += `<li class="tech-langs">${data}</li>`;
    };
    return techList;
  }
@@ -105,11 +105,9 @@ const projectData = [
    document.getElementById("portflio").innerHTML = htmlSkeletonToInsert;
  })();
  
- const closeElemPopup = document.getElementsByClassName("clossing-project")[0];
- closeElemPopup.addEventListener("click", closeProjectPopup)
+
  
  function closeProjectPopup() {
-   console.log("clicked");
    document.getElementsByClassName('popup-section')[0].style.display = 'none';
  }
  
@@ -120,23 +118,31 @@ const projectData = [
  
  function openProjectPopup(e) {
    e.preventDefault();
-   console.log(e)
    let targetIndex = e.target.attributes[1].value
    const techList = insertTechList(projectData[targetIndex])
  
-   let elemToInsert = `<h3 class="title work-title">
+   let elemToInsert = `
+   <h3 class="title work-title">
      ${projectData[targetIndex].name}
+     <img  class="clossing-project"src="images/Iconx.png" alt="">
      </h3>
+    
      <div class="work-info">
      <ul class="work-tag-popup">
          <li class="first-li">CANOPY</li>
-         <li class="second-li">Back End Dev</li>
-         <li class="second-li">2015</li>
+        <li class="second-li">
+            <img src="./images/counter.png">
+            Back End Dev
+        </li>
+         <li class="second-li">
+            <img src="./images/counter.png">
+            2015
+         </li>
      </ul>
      </div>
-     <img src="${projectData[targetIndex].image}" alt="" id="project-popup-image">
-     <div class="work-tag-button-wrapper">
-     <p class="work-description">
+     <img src="${projectData[targetIndex].image}" alt="" class="popup-image mobile-pop-img">
+     <div class="work-tag-button-wrapper  work-btn-mobile">
+     <p class="work-description work-description-mobile">
      ${projectData[targetIndex].details}
      </p>
      <div>
@@ -145,21 +151,21 @@ const projectData = [
      ${techList}
      </ul>
      </div>
-     <div class="project-link-div project-link-div-sec">
-     <a href="${projectData[targetIndex].live_link}" class="project-link live-link" target="_blank">
-         See Live
-         <img src="./assets/image/line-link-icon.svg" alt="" class="link-link-icon">
-         </a>
-     <a href="${projectData[targetIndex].live_link}" class="project-link live-link" target="_blank">
-         See Source
-         <img src="./assets/image/github-source-icon.svg" alt="" class="link-link-icon">
+     <hr class="contact-line">
+     <div class="see-container">
+     <a href="https://github.com/MariamOsman11/-Portfolio-.git" id="popup-link" class="see-live" target="_blank">
+     <span>seeLive</span>
+     <img src="./images/live.png" class="see-image">
      </a>
-     </div>
+     <a href="https://github.com/MariamOsman11/-Portfolio-.git" id="popup-link" class="see-live">
+     <span>seeSource</span>
+     <img src="./images/github.png" class="see-image">
+     </a>
      </div>
      </div>`
  
-   console.log("clicked", targetIndex);
    document.getElementsByClassName('window-wrapper')[0].innerHTML = elemToInsert;
    document.getElementsByClassName('popup-section')[0].style.display = 'block';
+   const closeElemPopup = document.getElementsByClassName("clossing-project")[0];
+   closeElemPopup.addEventListener("click", closeProjectPopup)
  }
- 
