@@ -166,9 +166,9 @@ for (let i = 0; i < triggerElem.length; i += 1) {
 }
 
 // Form validation
-const form = document.getElementById('.contact-form');
-const email = document.getElementById('.user-email');
-const errorMsg = document.getElementById('.error');
+const form = document.getElementsByClassName('contact-form')[0];
+const email = document.getElementsByClassName('user-email')[0];
+const errorMsg = document.getElementsByClassName('error')[0];
 
 function emailLowerCaseChecker(emailchecker, event) {
   for (let counter = 0; counter < emailchecker.length; counter += 1) {
