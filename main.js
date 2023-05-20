@@ -22,7 +22,7 @@ const projectData = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'Assets/Snapshoot Portfolio Card1.svg',
     details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
-    technologies: ['Html', 'CSS', 'JavaScript', 'Ruby', 'bootsrap'],
+    technologies: ['Html', 'CSS', 'JavaScript'],
     live_link: 'www.google.com',
     source_link: 'www.google.com',
   },
@@ -33,7 +33,7 @@ const projectData = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'Assets/Snapshoot Portfolio Card2.svg',
     details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
-    technologies: ['Html', 'CSS', 'JavaScript', 'Ruby', 'bootsrap'],
+    technologies: ['Html', 'CSS', 'JavaScript'],
     live_link: 'www.google.com',
     source_link: 'www.google.com',
   },
@@ -44,7 +44,7 @@ const projectData = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'Assets/Snapshoot Portfolio Card3.svg',
     details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
-    technologies: ['Html', 'CSS', 'JavaScript', 'Ruby', 'bootsrap'],
+    technologies: ['Html', 'CSS', 'JavaScript'],
     live_link: 'www.google.com',
     source_link: 'www.google.com',
   },
@@ -55,7 +55,7 @@ const projectData = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'Assets/Snapshoot Portfolio Card4.svg',
     details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
-    technologies: ['Html', 'CSS', 'JavaScript', 'Ruby', 'bootsrap'],
+    technologies: ['Html', 'CSS', 'JavaScript'],
     live_link: 'www.google.com',
     source_link: 'www.google.com',
   },
@@ -164,3 +164,26 @@ function openProjectPopup(e) {
 for (let i = 0; i < triggerElem.length; i += 1) {
   triggerElem[i].addEventListener('click', (e) => { openProjectPopup(e); });
 }
+
+// Form validation
+const form = document.getElementById('.contact-form');
+const email = document.getElementById('.user-email');
+const errorMsg = document.getElementById('.error');
+
+function emailLowerCaseChecker(emailchecker, event) {
+  for (let counter = 0; counter < emailchecker.length; counter += 1) {
+    if (emailchecker[counter] === emailchecker[counter].toUpperCase()) {
+      errorMsg.innerText = 'Form not sent! Email should be in Lowercase!';
+      event.preventDefault();
+      break;
+    } else {
+      errorMsg.innerText = '';
+    }
+  }
+}
+
+form.addEventListener('submit', (event) => {
+  const emailValue = email.value;
+  const emailchecker = emailValue.replace(/[^a-zA-Z]/g, '').split('');
+  emailLowerCaseChecker(emailchecker, event);
+});
