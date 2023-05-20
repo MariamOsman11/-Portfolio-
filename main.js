@@ -187,3 +187,46 @@ form.addEventListener('submit', (event) => {
   const emailchecker = emailValue.replace(/[^a-zA-Z]/g, '').split('');
   emailLowerCaseChecker(emailchecker, event);
 });
+
+// local-storage
+const formInputFields = document.getElementsByClassName('form-input-field');
+const localStorageObject = {
+  name: '',
+  email: '',
+  message: '',
+};
+const storageObjectName = 'formDataPm';
+
+const existingObject = localStorage.getItem(storageObjectName);
+if (existingObject) {
+  const name = document.getElementById('form-name');
+  const email = document.getElementById('form-email');
+  const message = document.getElementById('form-message');
+  const objectData = JSON.parse(existingObject);
+  name.value = objectData.name;
+  email.value = objectData.email;
+  message.value = objectData.message;
+}
+
+function storeFormInLocalStorage(data) {
+  const objectString = JSON.stringify(data);
+  const existingObject = localStorage.getItem(storageObjectName);
+  if (existingObject) {
+    localStorage.removeItem(storageObjectName);
+  }
+  localStorage.setItem(storageObjectName, objectString);
+}
+
+function manageEvent() {
+  const name = document.getElementById('form-name').value;
+  const email = document.getElementById('form-email').value;
+  const message = document.getElementById('form-message').value;
+  localStorageObject.name = name;
+  localStorageObject.email = email;
+  localStorageObject.message = message;
+  storeFormInLocalStorage(localStorageObject);
+}
+
+for (let i = 0; i < formInputFields.length; i += 1) {
+  formInputFields[i].addEventListener('input', manageEvent);
+}
