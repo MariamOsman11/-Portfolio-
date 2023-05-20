@@ -189,7 +189,7 @@ form.addEventListener('submit', (event) => {
 });
 
 // local-storage
-const formInputFields = document.getElementsByClassName('form-input-field');
+const formInputFields = document.getElementsByClassName('user-message');
 const localStorageObject = {
   name: '',
   email: '',
@@ -199,9 +199,9 @@ const storageObjectName = 'formDataPm';
 
 const existingObject = localStorage.getItem(storageObjectName);
 if (existingObject) {
-  const name = document.getElementById('form-name');
-  const email = document.getElementById('form-email');
-  const message = document.getElementById('form-message');
+  const name = document.getElementsByClassName('user-name');
+  const email = document.getElementsByClassName('user-email');
+  const message = document.getElementsByClassName('user_message');
   const objectData = JSON.parse(existingObject);
   name.value = objectData.name;
   email.value = objectData.email;
@@ -218,9 +218,9 @@ function storeFormInLocalStorage(data) {
 }
 
 function manageEvent() {
-  const name = document.getElementById('form-name').value;
-  const email = document.getElementById('form-email').value;
-  const message = document.getElementById('form-message').value;
+  const name = document.get('user-name').value;
+  const email = document.getElementsByClassName('user-email').value;
+  const message = document.getElementById('user_message').value;
   localStorageObject.name = name;
   localStorageObject.email = email;
   localStorageObject.message = message;
