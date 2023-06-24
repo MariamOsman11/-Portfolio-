@@ -120,19 +120,7 @@ function openProjectPopup(e) {
      <img  class="clossing-project"src="images/Iconx.png" alt="">
      </h3>
     
-     <div class="work-info">
-     <ul class="work-tag-popup">
-         <li class="first-li">Cakeyworkshop</li>
-        <li class="second-li">
-            <img src="./images/counter.png">
-            Front-End
-        </li>
-         <li class="second-li">
-            <img src="./images/counter.png">
-            2023
-         </li>
-     </ul>
-     </div>
+    
      <img src="${projectData[targetIndex].image}" alt="" class="popup-image mobile-pop-img">
      <div class="work-tag-button-wrapper  work-mobile-wrapper">
      <p class="work-description work-description-mobile">
