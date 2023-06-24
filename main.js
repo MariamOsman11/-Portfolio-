@@ -17,14 +17,14 @@ menuList.addEventListener('click', closemenu);
 const projectData = [
   {
     id: 0,
-    name: 'Tonic',
-    tag: { sector: 'Canopy', type: 'Band End Dev', year: 2015 },
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: 'Assets/Snapshoot Portfolio Card1.svg',
-    details: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,',
+    name: 'CAKE-LOVERS WORKSHOP Website',
+    tag: { sector: 'Workshop', type: 'Frontend Dev', year: 2023 },
+    description: 'Simple cakey website designed to Look professional.Impress potential customers to join future class to study cake making. Built with HTML,CSS and Javascript.',
+    image: 'images/cakeywebsite.png',
+    details: 'A workshop that will allows low income individuals to exhibit with low income to get source of income why can sell their cake to the host community and make money out of it',
     technologies: ['Html', 'CSS', 'JavaScript'],
-    live_link: 'www.google.com',
-    source_link: 'www.google.com',
+    live_link: 'https://mariamosman11.github.io/CAPSTONE-PROJECT-ONE/',
+    source_link: 'https://github.com/MariamOsman11/CAPSTONE-PROJECT-ONE.git',
   },
   {
     id: 1,
@@ -122,14 +122,14 @@ function openProjectPopup(e) {
     
      <div class="work-info">
      <ul class="work-tag-popup">
-         <li class="first-li">CANOPY</li>
+         <li class="first-li">Cakeyworkshop</li>
         <li class="second-li">
             <img src="./images/counter.png">
-            Back End Dev
+            Front-End
         </li>
          <li class="second-li">
             <img src="./images/counter.png">
-            2015
+            2023
          </li>
      </ul>
      </div>
@@ -144,7 +144,7 @@ function openProjectPopup(e) {
      ${techList}
      </ul>
      </div>
-     <div class="see-container">
+    <div class="see-container">
      <a href="https://github.com/MariamOsman11/-Portfolio-.git" id="popup-link" class="see-live" target="_blank">
      <span>seeLive</span>
      <img src="./images/live.png" class="see-image">
